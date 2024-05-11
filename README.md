@@ -31,7 +31,7 @@ Następnie otwórz eksplorator plików w Colab.
 
 Ostatnim krokiem jest przesłanie plików z danymi (pliki w folderze *data*) i skryptu sprawdzającego odpowiedzi (plik *answers.py* w folderze *notebooks*). W tym celu otwórz systemowy eksplorator plików, zaznacz i przeciągnij odpowiednie pliki w puste miejsce eksploratora Colab. Powinno to wyglądać tak jak na zdjęciu poniżej.
 
-![Przeciągnij odpowienie pliki](./img/setup_5.png)
+![Przeciągnij odpowienie pliki](./img/setup_5_new.png)
 
 ***GOTOWE!***
 

@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-pokemon_df = pd.read_csv('../data/pokemon.csv', index_col=0)
+pokemon_df = pd.read_csv('/content/pokemon.csv', index_col=0)
 
 def zad_1(df: pd.DataFrame, hint=False):
     if hint:
@@ -78,9 +78,6 @@ def zad_6(name: str, hint=False):
         print('\u2713 Wynik poprawny!')
     else:
         print('\u2717 Zły wynik!')
-
-# zad_7
-# (pokemon_df.dtypes == 'object).sum()
 
 def zad_8(count: int, hint=False):
     if hint:
@@ -174,14 +171,6 @@ def zad_14(df: pd.DataFrame, hint=False):
     else:
         print('\u2717 Zły wynik!')
 
-# zad_15
-# legendary_pokemon = pokemon_df[
-#     (pokemon_df['Legendary'] == True) &
-#     (pokemon_df['Type 1'] == 'Steel') &
-#     (pokemon_df['Generation'] > 3) &
-#     (pokemon_df['Speed'] > 100)
-# ]
-
 def zad_16(df: pd.DataFrame, hint=False):
     if hint:
         print('\U0001f4a1 Wykorzystaj filtrowanie DataFrame\'u przez połączenie kilku warunków znakiem `&`. Pamiętaj też o nawiasach między warunkami.')
@@ -233,22 +222,3 @@ def zad_20(series: pd.Series, hint=False):
         print('\u2713 Wynik poprawny!')
     else:
         print('\u2717 Zły wynik!')
-
-# zad_21
-# generations.plot(kind='pie',
-#                  title='Liczebność pokemonów w poszczególnych generacjach', 
-#                  autopct='%.2f%%')
-
-# zad_22
-# flying_pokemons = pokemon_df[
-#     (pokemon_df['Type 1'] == 'Flying') |
-#     (pokemon_df['Type 2'] == 'Flying')
-# ]
-
-# flying_pokemons.plot(kind='scatter',
-#                      title='Obrona i atak latających pokemonów',
-#                      x=['Defense'],
-#                      y=['Attack'],
-#                      xlabel='Defense',
-#                      ylabel='Attack',
-#                      grid=True)
